@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  background-color: #060606;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-bottom: 60px; /* Espacio para el footer fijo */
+}
+
+
+
+.main-content {
+  margin-top: 80px; /* Asegúrate de que esta altura sea igual o mayor a la altura del navbar */
+  flex: 1;
+  padding: 20px;
+}
+
+
+/* Navbar Styles */
+.custom-navbar {
+  background-color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.custom-navbar .navbar-brand img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-navbar .navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.custom-navbar .nav-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.custom-navbar .nav-link img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+#login-btn {
+  background: #1DB954;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+
+/* Main Content Styles */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #181818;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+
+.nav-link {
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #1DB954;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 60px; /* Ajuste para footer */
+}
+
+/* Player Styles */
+.player-container img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+#search-input {
+  background: #282828;
+  border: none;
+  color: white;
+}
+
+#search-input::placeholder {
+  color: #b3b3b3;
+}
+
+.list-group-item {
+  background: #282828;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.list-group-item:hover {
+  background: #24b906;
+}
+
+/* Footer Styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #00000000;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.hidden-footer {
+  transform: translateY(100%);
+}
+
+.footer button {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 24px; /* Aumentado para mayor visibilidad */
+  cursor: pointer;
+}
+
+.footer button:hover {
+  color: #1DB954;
+}
+
+button img {
+  width: 20px; 
+  height: 20px;
+  filter: none; /* Eliminar la inversión si no es necesario */
+}
+
+p {
+  font-size: 10px;
+}
+
+
+.footer button img {
+  filter: invert(1); /* Invertir los colores */
+  width: 20px;
+  height: 20px;
+}
+
+

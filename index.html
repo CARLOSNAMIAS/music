@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Music</title>
+    <link rel="icon" type="image/x-icon" href="./img/spofyy.svg">
+    <!-- Cargar jQuery aquí si es necesario desde el inicio -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/spofyy.svg" alt="Logo de App Music" width="30" height="30">
+            </a>
+            <button class="btn btn-light" id="login-btn">Iniciar sesión</button>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex">
+        <div class="sidebar p-3 d-none d-lg-block">
+            <h2 class="text-light">Mi Música</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Explorar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Favoritos</a></li>
+            </ul>
+        </div>
+
+  
+        <div class="main-content p-4">
+            <h2 class="text-light text-center">Encuentra tu música favorita</h2>
+            <input type="text" id="search-input" class="form-control mb-3" placeholder="Buscar canción o artista...">
+            <ul id="song-list" class="list-group"></ul>
+
+            <div class="player-container text-center mt-4">
+                <img id="song-cover" src="https://via.placeholder.com/300" class="img-fluid rounded mb-3" alt="Portada de canción">
+                <h4 id="song-title" class="text-light">Selecciona una canción</h4>
+                <audio id="audio-player" controls class="w-100">
+                    <source id="audio-source" src="" type="audio/mp3">
+                    Tu navegador no soporta el audio.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button>
+            <img src="./img/home_icon.svg" alt="Icono de inicio" />
+            <p>home</p>
+        </button>
+        <button id="search-btn">
+            <img src="./img/search_icon.svg" alt="Icono de búsqueda" />
+            <p>search</p>
+        </button>
+        <button>
+            <img src="./img/library_regular_icon.svg" alt="Icono de biblioteca" />
+            <p>biblioteca</p>
+        </button>
+        <button>
+            <img src="./img/spotify_icon.svg" alt="Icono de usuario" />
+            <p>usuario</p>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
